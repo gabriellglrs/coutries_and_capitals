@@ -1,61 +1,196 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🌍 Quiz de Países e Capitais
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Um jogo interativo desenvolvido em Laravel para testar seus conhecimentos sobre países e suas respectivas capitais ao redor do mundo.
 
-## About Laravel
+<br>
+<br>
+<img width="1278" height="867" alt="image" src="https://github.com/user-attachments/assets/5d87b902-2c6f-4b3b-889f-dd2413a3e7cc" />
+<img width="1346" height="958" alt="image" src="https://github.com/user-attachments/assets/c0127f21-54e7-4a68-9f1d-aee0a54fda42" />
+<img width="1279" height="961" alt="image" src="https://github.com/user-attachments/assets/30974584-afb8-4b00-825a-b5c12e66d484" />
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<br>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ✨ Características
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- 🎯 **Quiz Personalizável**: Escolha de 3 a 30 perguntas
+- 🌐 **Banco de Dados Extenso**: Mais de 190 países e capitais
+- 📊 **Sistema de Pontuação**: Acompanhe seu desempenho em tempo real
+- 🎨 **Interface Responsiva**: Design moderno com Bootstrap
+- 🔄 **Opções Aleatórias**: Perguntas e alternativas embaralhadas a cada jogo
+- 💾 **Sessões Seguras**: Controle de estado do jogo via sessões Laravel
+- 🏆 **Feedback Personalizado**: Mensagens baseadas na performance
 
-## Learning Laravel
+## 🛠️ Tecnologias Utilizadas
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Laravel 11** - Framework PHP
+- **PHP 8.2+** - Linguagem de programação
+- **Bootstrap 5** - Framework CSS
+- **Session Storage** - Gerenciamento de estado do jogo
+- **Blade Templates** - Engine de templates
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 📋 Requisitos
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- PHP 8.2 ou superior
+- Composer
+- Node.js e npm (para assets)
+- Servidor web (Apache/Nginx) ou Laravel Sail/Valet
 
-## Laravel Sponsors
+## 🚀 Instalação
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/seu-usuario/quiz-paises-capitais.git
+   cd quiz-paises-capitais
+   ```
 
-### Premium Partners
+2. **Instale as dependências**
+   ```bash
+   composer install
+   npm install
+   ```
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+3. **Configure o ambiente**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-## Contributing
+4. **Compile os assets**
+   ```bash
+   npm run build
+   ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+5. **Inicie o servidor**
+   ```bash
+   php artisan serve
+   ```
 
-## Code of Conduct
+6. **Acesse a aplicação**
+   Abra seu navegador em `http://localhost:8000`
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🎮 Como Jogar
 
-## Security Vulnerabilities
+1. **Página Inicial**: Escolha quantas perguntas deseja responder (3-30)
+2. **Quiz**: Responda qual é a capital do país apresentado
+3. **Progresso**: Acompanhe sua pontuação e progresso em tempo real
+4. **Resultados**: Veja sua performance final com feedback personalizado
+5. **Recomeçar**: Jogue novamente quantas vezes quiser!
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 📁 Estrutura do Projeto
 
-## License
+```
+├── app/
+│   ├── Http/Controllers/
+│   │   └── MainController.php      # Controlador principal do jogo
+│   ├── View/Components/
+│   │   └── MainLayout.php          # Componente de layout
+│   └── appData.php                 # Dados dos países e capitais
+├── resources/
+│   ├── views/
+│   │   ├── components/
+│   │   │   ├── main-layout.blade.php
+│   │   │   ├── logo.blade.php
+│   │   │   └── footer.blade.php
+│   │   ├── home.blade.php          # Página inicial
+│   │   ├── quiz.blade.php          # Página do quiz
+│   │   └── results.blade.php       # Página de resultados
+│   └── css/
+│       └── app.css                 # Estilos personalizados
+└── routes/
+    └── web.php                     # Rotas da aplicação
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🎯 Funcionalidades Principais
+
+### Sistema de Validação
+- Validação do número de perguntas
+- Verificação de sessão ativa
+- Controle de navegação sequencial
+
+### Geração Dinâmica de Perguntas
+- Seleção aleatória de países
+- Geração automática de 4 alternativas por pergunta
+- Embaralhamento das opções de resposta
+
+### Sistema de Pontuação
+- Contagem de acertos em tempo real
+- Cálculo de percentual de acertos
+- Feedback baseado na performance:
+  - 90%+: "Excelente! Você é um expert em geografia!"
+  - 80-89%: "Muito bom! Você conhece bem os países e capitais!"
+  - 70-79%: "Bom trabalho! Continue estudando!"
+  - 60-69%: "Não está mal, mas há espaço para melhoria!"
+  - 50-59%: "Resultado mediano. Que tal estudar um pouco mais?"
+  - <50%: "Precisa estudar mais geografia. Não desista!"
+
+### Controle de Sessão
+- Prevenção contra navegação direta via URL
+- Limpeza automática de sessões anteriores
+- Proteção contra pulos de perguntas
+
+## 🌍 Base de Dados
+
+O quiz inclui dados de mais de 190 países com suas respectivas capitais, incluindo:
+
+- Países de todos os continentes
+- Nomes em português brasileiro
+- Capitais oficiais atualizadas
+- Casos especiais como países com múltiplas capitais
+
+## 🎨 Interface do Usuário
+
+- **Design Responsivo**: Funciona perfeitamente em desktop, tablet e mobile
+- **Bootstrap 5**: Interface moderna e profissional
+- **Animações Sutis**: Transições suaves para melhor experiência
+- **Feedback Visual**: Indicadores de progresso e pontuação
+- **Acessibilidade**: Estrutura semântica e navegação clara
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas! Para contribuir:
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📝 Possíveis Melhorias
+
+- [ ] Sistema de ranking/leaderboard
+- [ ] Categorias por continente
+- [ ] Modo de dificuldade (bandeiras, línguas)
+- [ ] Timer para respostas
+- [ ] Sistema de hints
+- [ ] Multiplayer
+- [ ] API para dados externos
+- [ ] Modo offline/PWA
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+
+## 👨‍💻 Autor
+
+Seu Nome - [seu-email@exemplo.com](mailto:seu-email@exemplo.com)
+
+Link do Projeto: [https://github.com/seu-usuario/quiz-paises-capitais](https://github.com/seu-usuario/quiz-paises-capitais)
+
+---
+
+⭐ Se este projeto foi útil para você, considere dar uma estrela no GitHub!
+
+## 🎯 Capturas de Tela
+
+### Página Inicial
+*Interface limpa para configurar o número de perguntas*
+
+### Durante o Quiz
+*Pergunta com 4 alternativas e barra de progresso*
+
+### Resultados
+*Feedback detalhado com opção de jogar novamente*
+
+---
+
+**Divirta-se testando seus conhecimentos geográficos! 🌍🎓**
